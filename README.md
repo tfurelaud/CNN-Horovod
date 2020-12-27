@@ -14,10 +14,12 @@
  
  `*5 - installez les modules nécessaires au TP : pip install -r requirements.txt `
  
- `*6 - installez tensorflow sur l'environnement virutel : conda install tensorflow`
+ `*6 - installez tensorflow sur l'environnement virutel : conda install tensorflow keras`
  
  `*7 - installez keras sur l'environnement virutel : conda install keras`
  
+Ici vous pouvez lancer CNN.py grâce à python ou alors lancer le jupyter notebook :
+
  `*8 - lancez jupyter-lab : jupyter-lab --ip=0.0.0.0`
  
  `*9 - identifiez le port sur lequel il s'est lancé (normalement 8888) ou précisez --port 8888`
