@@ -36,7 +36,7 @@ Then you can :
    
 ### CNN Basic:
 
-  You can run the basic version of CNN by unloading cuda and dnn :
+  You can run the basic version of CNN by unloading cuda and cudnn :
       
       - module unload dnn/cudnn/10.0-v7.6.4.38 compiler/cuda/10.1
       
