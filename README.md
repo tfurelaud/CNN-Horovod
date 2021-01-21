@@ -1,29 +1,12 @@
 # CNN on CIFAR-10 with Horovod
 
 ## How to compute on Plafrim
+<em>important</em>
+- Install all frameworks needed : pip install torch==1.7 tensorflow==2.3.0 matplotlib==3.3.3 Keras==2.4.3 mxnet pickle numpy 
 
- `*0 - Lancez un run avec salloc et connectez vous sur votre noeud (1 noeud et quelques cpu suffisent) : salloc -p mistral -N 1 --mincpu=20 --time=6:00:00`
- 
- `*1 - Installez une distribution python : Exécutez le script install_miniconda.sh situé à la racine des TPs`
- 
- `*2 - activez anaconda : source ~/anaconda/bin/activate`
- 
- `*3 - Créez un environnement dédié au tp : conda create -y --name horovod python=3.8 pip`
- 
- `*4 - activez l'environnement : conda activate horovod`
- 
- `*5 - installez les modules nécessaires au TP : pip install -r requirements.txt `
- 
- `*6 - installez tensorflow sur l'environnement virutel : conda install tensorflow keras`
- 
- `*7 - installez keras sur l'environnement virutel : conda install keras`
- 
-Ici vous pouvez lancer CNN.py grâce à python ou alors lancer le jupyter notebook :
+- Load all modules needed : module load compiler/cuda/10.1 dnn/cudnn/10.0-v7.6.4.38 mpi/openmpi/3.1.4-all mpi/openmpi/3.1.4-all build/cmake/3.18.4 compiler/gcc/8.3.0 language/python/3.8.0
 
- `*8 - lancez jupyter-lab : jupyter-lab --ip=0.0.0.0`
- 
- `*9 - identifiez le port sur lequel il s'est lancé (normalement 8888) ou précisez --port 8888`
- 
- `*10 - depuis votre machine locale faites un port forwarding pour accéder au port (8888) de votre noeud : ssh -L 8888:mistralXX:8888 formation (Attention à bien remplacer mistralXX par la machine sur laquelle vous avez allouer les noeuds)`
- 
 
+- Install horovod : HOROVOD_WITH_TENSORFLOW=1 pip install --no-cache-dir horovod
+
+- Then you can execute with : horovodrun -np 2 python3 CNN-Horovod.py
