@@ -2,6 +2,16 @@
 
 ## How to install Horovod on Plafrim
 
+- First connect to sirocco :
+
+      salloc -p sirocco -N 1 --time=01:00:00
+      ssh sirocco06
+      
+- Then clone this rep and go in :
+
+      git clone https://github.com/tfurelaud/CNN-Horovod.git
+      cd CNN-Horovod
+
 - Install all frameworks needed : 
 
       pip install torch==1.7 tensorflow==2.3.0 matplotlib==3.3.3 Keras==2.4.3 mxnet numpy==1.18.5
