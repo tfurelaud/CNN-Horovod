@@ -4,7 +4,7 @@
 
 You can go on [!The site of CIFAR](https://www.cs.toronto.edu/~kriz/cifar.html) and get the CIFAR-10 python version (163 Mb). Then, put the downloaded archive into this folder (CNN-Horovod), where you can find CNN.py, CNN-Horovod.py and the README.md, then unarchive it :
 
-                        tar -xf cifar-10-python.tar.gz
+    tar -xf cifar-10-python.tar.gz
 
 
 ## How to install Horovod on Plafrim
